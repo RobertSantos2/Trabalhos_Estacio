@@ -66,7 +66,7 @@ void compararAtributos(Dinossauro d1, Dinossauro d2) {
                 printf("\nO dinossauro %s venceu! (Peso)\n", d2.nome);
             else
                 printf("\nEmpate! (Peso)\n");
-            break;
+            
         case 2:
             if (d1.altura > d2.altura)
                 printf("\nO dinossauro %s venceu! (Altura)\n", d1.nome);
@@ -74,7 +74,7 @@ void compararAtributos(Dinossauro d1, Dinossauro d2) {
                 printf("\nO dinossauro %s venceu! (Altura)\n", d2.nome);
             else
                 printf("\nEmpate! (Altura)\n");
-            break;
+            
         case 3:
             if (d1.velocidade > d2.velocidade)
                 printf("\nO dinossauro %s venceu! (Velocidade)\n", d1.nome);
@@ -82,10 +82,10 @@ void compararAtributos(Dinossauro d1, Dinossauro d2) {
                 printf("\nO dinossauro %s venceu! (Velocidade)\n", d2.nome);
             else
                 printf("\nEmpate! (Velocidade)\n");
-            break;
+            
         default:
             printf("\nOpcao invalida!\n");
-            break;
+            
     }
 }
 
@@ -167,16 +167,16 @@ int main() {
     switch (desafio) {
         case 1:
             compararAtributoSimples(trex, velociraptor);
-            break;
+            
         case 2:
             compararAtributos(trex, velociraptor);
-            break;
+           
         case 3:
             compararAtributosComplexo(trex, velociraptor);
-            break;
+          
         default:
             printf("\nDesafio invalido!\n");
-            break;
+            
     }
 
     return 0;
